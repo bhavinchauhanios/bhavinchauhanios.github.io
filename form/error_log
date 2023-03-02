@@ -1,0 +1,10 @@
+[16-Apr-2020 09:58:52 UTC] PHP Warning:  mail() expects parameter 3 to be string, array given in /home2/bhavir1z/public_html/form/contact.php on line 26
+[16-Apr-2020 09:58:54 UTC] PHP Warning:  mail() expects parameter 3 to be string, array given in /home2/bhavir1z/public_html/form/contact.php on line 26
+[16-Apr-2020 10:00:25 UTC] PHP Warning:  mail() expects parameter 3 to be string, array given in /home2/bhavir1z/public_html/form/contact.php on line 26
+[16-Apr-2020 10:00:55 UTC] PHP Warning:  mail() expects parameter 3 to be string, array given in /home2/bhavir1z/public_html/form/contact.php on line 26
+[16-Apr-2020 10:00:56 UTC] PHP Warning:  mail() expects parameter 3 to be string, array given in /home2/bhavir1z/public_html/form/contact.php on line 26
+[16-Apr-2020 10:00:57 UTC] PHP Warning:  mail() expects parameter 3 to be string, array given in /home2/bhavir1z/public_html/form/contact.php on line 26
+[16-Apr-2020 10:00:57 UTC] PHP Warning:  mail() expects parameter 3 to be string, array given in /home2/bhavir1z/public_html/form/contact.php on line 26
+[16-Apr-2020 10:10:44 UTC] PHP Warning:  mail() expects parameter 3 to be string, array given in /home2/bhavir1z/public_html/form/contact.php on line 26
+[16-Apr-2020 11:12:47 UTC] PHP Parse error:  syntax error, unexpected '$from' (T_VARIABLE) in /home2/bhavir1z/public_html/form/contact.php on line 7
+[16-Apr-2020 11:14:38 UTC] PHP Parse error:  syntax error, unexpected '$from' (T_VARIABLE) in /home2/bhavir1z/public_html/form/contact.php on line 7
