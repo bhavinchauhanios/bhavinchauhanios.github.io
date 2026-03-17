@@ -235,47 +235,45 @@ const contactForm = document.getElementById('contact-form');
 if (contactForm) {
   const messageBox = contactForm.querySelector('.form-message');
 
-  contactForm.addEventListener('submit', async (event) => {
+  contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
+    if (!contactForm.reportValidity()) {
+      if (messageBox) {
+        messageBox.textContent = 'Please complete all fields before sending.';
+        messageBox.classList.remove('is-success');
+        messageBox.classList.add('is-error');
+      }
+      return;
+    }
+
     if (messageBox) {
-      messageBox.textContent = 'Sending...';
+      messageBox.textContent = 'Opening your email app...';
       messageBox.classList.remove('is-success', 'is-error');
     }
 
-    try {
-      const response = await fetch(contactForm.action, {
-        method: 'POST',
-        body: new FormData(contactForm),
-      });
+    const formData = new FormData(contactForm);
+    const name = String(formData.get('InputName') || '').trim();
+    const email = String(formData.get('InputEmail') || '').trim();
+    const subject = String(formData.get('InputSubject') || '').trim();
+    const message = String(formData.get('InputMessage') || '').trim();
+    const mailtoSubject = encodeURIComponent(subject || 'New project inquiry');
+    const mailtoBody = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+    );
 
-      const raw = await response.text();
-      let data = null;
+    window.location.href = `mailto:bhavinchauhan.tech@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`;
 
-      try {
-        data = JSON.parse(raw);
-      } catch (parseError) {
-        data = {
-          type: 'danger',
-          message: `Server returned an invalid response (status ${response.status}).`,
-        };
-      }
-
-      const success = response.ok && data && data.type === 'success';
-
-      if (messageBox) {
-        messageBox.textContent = (data && data.message) || (success ? 'Message sent.' : 'Unable to send message.');
-        messageBox.classList.add(success ? 'is-success' : 'is-error');
-      }
-
-      if (success) {
-        contactForm.reset();
-      }
-    } catch (error) {
-      if (messageBox) {
-        messageBox.textContent = 'Network error. Please try again.';
-        messageBox.classList.add('is-error');
-      }
+    if (messageBox) {
+      messageBox.textContent = 'Your email app should open with the message details filled in.';
+      messageBox.classList.remove('is-error');
+      messageBox.classList.add('is-success');
     }
+
+    setTimeout(() => {
+      if (messageBox) {
+        messageBox.textContent = 'If nothing opened, email bhavinchauhan.tech@gmail.com directly.';
+      }
+    }, 2500);
   });
 }
