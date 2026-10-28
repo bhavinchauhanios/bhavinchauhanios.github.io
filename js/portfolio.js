@@ -277,3 +277,51 @@ if (contactForm) {
     }, 2500);
   });
 }
+
+// Theme toggle (dark/light), remembered in localStorage
+const themeBtn = document.getElementById('themeBtn');
+if (themeBtn) {
+  themeBtn.addEventListener('click', () => {
+    const next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+    document.documentElement.dataset.theme = next;
+    try { localStorage.setItem('theme', next); } catch (e) { /* storage unavailable */ }
+  });
+}
+
+// Scroll progress bar
+const progressBar = document.getElementById('scrollProgress');
+if (progressBar) {
+  const updateProgress = () => {
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    progressBar.style.width = max > 0 ? `${(window.scrollY / max) * 100}%` : '0';
+  };
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+}
+
+// Highlight current section in nav
+const navLinks = document.querySelectorAll('.site-nav a[href^="#"]:not(.btn)');
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        navLinks.forEach((link) => link.classList.toggle('is-current', link.getAttribute('href') === `#${entry.target.id}`));
+      }
+    });
+  },
+  { rootMargin: '-45% 0px -50% 0px' }
+);
+navLinks.forEach((link) => {
+  const target = document.querySelector(link.getAttribute('href'));
+  if (target) sectionObserver.observe(target);
+});
+
+// Keyboard access for project cards
+projectCards.forEach((card) => {
+  card.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      card.click();
+    }
+  });
+});

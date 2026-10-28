@@ -1,476 +1,392 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bhavin Chauhan | Lead Application Developer</title>
-  <meta name="description" content="Lead Application Developer with 12+ years of experience building mobile apps across iOS, Android, and web-connected platforms using Swift, SwiftUI, Flutter, and React Native.">
+  <title>Bhavin Chauhan | Lead Application Developer · iOS, Flutter, React Native</title>
+  <meta name="description" content="Lead Application Developer with 12+ years of experience and 28+ App Store apps. Available for freelance, contract and full-time mobile projects across iOS, Flutter and React Native.">
+  <meta name="theme-color" content="#0b0f1a">
+  <meta property="og:title" content="Bhavin Chauhan | Lead Application Developer">
+  <meta property="og:description" content="12+ years building iOS, Flutter and React Native apps. 28+ apps on the App Store.">
+  <meta property="og:type" content="website">
   <link rel="icon" type="image/png" href="images/header_ic.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/trending-portfolio.css">
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
 </head>
 <body>
-  <div class="bg-orb orb-a"></div>
-  <div class="bg-orb orb-b"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" id="scrollProgress"></div>
 
   <header class="site-header">
-    <a class="brand" href="#home">Bhavin<span>Chauhan</span></a>
-    <button class="menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false">Menu</button>
-    <nav class="site-nav" id="siteNav">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#ai-edge">AI Edge</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Bhavin Chauhan home"><span class="brand-mark">BC</span>Bhavin Chauhan</a>
+      <nav class="site-nav" id="siteNav" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#reviews">Reviews</a>
+        <a class="btn btn-primary btn-sm nav-cta" href="#contact">Hire me</a>
+      </nav>
+      <button class="theme-btn" type="button" id="themeBtn" aria-label="Toggle light and dark theme">◐</button>
+      <button class="menu-btn" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">Menu</button>
+    </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero" id="home">
-      <div class="container hero-grid reveal">
-        <div>
-          <p class="eyebrow">Lead Application Developer</p>
-          <h1>Building production-ready mobile apps with modern AI experiences.</h1>
-          <p class="lead">
-            I am Bhavin Chauhan, a Lead Application Developer with 12+ years of experience delivering mobile applications across iOS, Android, and web-connected platforms. I work across music streaming, location-based services, fintech, healthcare, and real-time communication, and use AI-assisted tools to speed up delivery.
-          </p>
-          <div class="hero-tags" aria-label="Key focus areas">
-            <span>iOS + SwiftUI</span>
-            <span>Flutter + React Native</span>
-            <span>AI-Assisted Development</span>
-            <span>Real-time Product Flows</span>
-          </div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="badge"><span class="dot"></span> Available for freelance, contract and full-time roles</p>
+          <h1>Lead Application Developer who ships <span class="grad">mobile apps people use.</span></h1>
+          <p class="lead">12+ years building iOS, Flutter and React Native products across music streaming, location services, fintech, healthcare and real-time communication. 28+ apps published on the App Store.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Book a call</a>
-            <a class="btn btn-ghost" href="https://drive.google.com/file/d/1CuAAR8Ain92h83-vVjjkUHedf8hofOMl/view?usp=sharing" target="_blank" rel="noreferrer">Download CV</a>
+            <a class="btn btn-primary" href="#contact">Start a project</a>
+            <a class="btn btn-ghost" href="https://drive.google.com/file/d/1kj40xR0C2IOWWSewOwq3Hbci9OYO_8a6/view?usp=sharing" target="_blank" rel="noreferrer">Download CV</a>
+            <a class="btn btn-link" href="#work">See my work →</a>
           </div>
-          <div class="social-links">
+          <div class="social-links" aria-label="Profiles">
+            <a href="https://www.linkedin.com/in/bhavin-chauhan-73008026/" target="_blank" rel="noreferrer">LinkedIn</a>
             <a href="https://github.com/bhavinchauhanios" target="_blank" rel="noreferrer">GitHub</a>
             <a href="https://stackoverflow.com/users/2865534/bhavin-chauhan" target="_blank" rel="noreferrer">Stack Overflow</a>
-            <a href="https://www.linkedin.com/in/bhavin-chauhan-73008026/" target="_blank" rel="noreferrer">LinkedIn</a>
             <a href="https://api.whatsapp.com/send?phone=919157716336" target="_blank" rel="noreferrer">WhatsApp</a>
           </div>
         </div>
-
-        <aside class="hero-card">
-          <img src="images/profile_pic.jpg" alt="Bhavin Chauhan portrait">
-          <div class="hero-card-meta">
-            <p>Open to remote and freelance opportunities</p>
-            <ul>
-              <li>28+ apps published on the App Store</li>
-              <li>Leading mobile delivery across four products</li>
-              <li>iOS, Android, and cross-platform delivery</li>
-            </ul>
-          </div>
+        <aside class="hero-visual">
+          <div class="photo-frame"><img src="images/profile_pic.jpg" alt="Portrait of Bhavin Chauhan"></div>
+          <div class="float-card fc-a"><strong>28+</strong><span>Apps on the App Store</span></div>
+          <div class="float-card fc-b"><strong>4</strong><span>Products led today</span></div>
         </aside>
       </div>
+      <div class="container stats reveal">
+        <div><strong>12+</strong><span>Years of experience</span></div>
+        <div><strong>28+</strong><span>Apps published</span></div>
+        <div><strong>5,000+</strong><span>Field users on live tracking</span></div>
+        <div><strong>1,000+</strong><span>Concurrent streaming users</span></div>
+      </div>
     </section>
 
-    <section class="section" id="about">
-      <div class="container reveal">
-        <div class="section-head">
-          <p class="eyebrow">About</p>
-          <h2>Lead mobile engineer who ships, mentors, and uses AI to move faster</h2>
+    <section class="section" id="audience">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Who I work with</p>
+          <h2>Built for the people who hire and ship</h2>
         </div>
-        <div class="about-grid">
-          <article class="panel">
-            <p>
-              I am a Lead Application Developer with strong expertise in Swift, SwiftUI, UIKit, mobile architecture, and cross-platform development with Flutter and React Native.
-              I have delivered products across music streaming, location-based services, fintech, healthcare, and real-time communication.
-            </p>
-            <p>
-              I use MVVM, VIPER, and Clean Architecture to keep code modular and maintainable. I review code, mentor developers, and work closely with product, backend, and QA teams.
-              I also use AI-assisted tools such as Cursor, Claude, GitHub Copilot, and ChatGPT to improve development workflows.
-            </p>
+        <div class="cards-3">
+          <article class="card reveal"><div class="icon">👔</div><h3>Recruiters &amp; HR</h3><p>Lead-level mobile engineer with proven team leadership, 12+ years of experience and a clear delivery record. Grab the CV or skim the timeline below.</p><a class="card-link" href="#experience">View experience →</a></article>
+          <article class="card reveal"><div class="icon">🚀</div><h3>Clients &amp; Startups</h3><p>From idea to App Store. I take on new builds, rescue stalled apps and migrate web products to mobile, with clear communication throughout.</p><a class="card-link" href="#services">See services →</a></article>
+          <article class="card reveal"><div class="icon">🤝</div><h3>Freelance &amp; Agencies</h3><p>Need a senior iOS, Flutter or React Native developer for a sprint or a long engagement? I plug into existing teams and processes quickly.</p><a class="card-link" href="#contact">Talk availability →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Services</p>
+          <h2>What I can do for your product</h2>
+        </div>
+        <div class="cards-4">
+          <article class="card reveal"><h3>Native iOS apps</h3><p>Swift, SwiftUI and UIKit apps with clean MVVM, VIPER or Clean Architecture, built to pass App Store review.</p></article>
+          <article class="card reveal"><h3>Cross-platform apps</h3><p>Flutter and React Native apps that deliver on iOS and Android from a single codebase.</p></article>
+          <article class="card reveal"><h3>Web-to-mobile migration</h3><p>Move an existing web product to mobile while keeping the functionality your users rely on.</p></article>
+          <article class="card reveal"><h3>Tech lead &amp; code review</h3><p>Architecture decisions, code reviews, mentoring and release readiness for your mobile team.</p></article>
+          <article class="card reveal"><h3>Maps, GPS &amp; real-time</h3><p>Live tracking, background location, geofencing, WebSockets, chat, VoIP and video calling.</p></article>
+          <article class="card reveal"><h3>Streaming &amp; media</h3><p>Music integrations (Spotify, Apple Music), live streaming and AVFoundation media processing.</p></article>
+          <article class="card reveal"><h3>Performance &amp; reliability</h3><p>Battery optimization, offline sync, crash and latency reduction, and debugging of complex issues.</p></article>
+          <article class="card reveal"><h3>AI-assisted delivery</h3><p>Cursor, Claude, Copilot and ChatGPT in the workflow, so features ship faster without cutting quality.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2>Featured products</h2>
+        </div>
+        <div class="featured">
+          <article class="feature reveal">
+            <p class="feature-meta">2025 – Present · Native iOS</p>
+            <h3>iQuQ</h3>
+            <p>Music discovery and party collaboration app. SwiftUI and MVVM with Spotify and Apple Music integrations and real-time sync.</p>
+            <div class="chips"><span>SwiftUI</span><span>MVVM</span><span>Swift concurrency</span></div>
+            <a class="card-link" href="https://iquqapp.com" target="_blank" rel="noreferrer">iquqapp.com →</a>
           </article>
-          <article class="stats-grid">
-            <div class="stat-card">
-              <h3>12+</h3>
-              <p>Years experience</p>
+          <article class="feature reveal">
+            <p class="feature-meta">2020 – 2025 · Swift · VIPER</p>
+            <h3>Lystloc</h3>
+            <p>Field-force management with live tracking, dynamic attendance forms and reimbursements. Location tracking used by 5,000+ field users.</p>
+            <div class="chips"><span>Core Location</span><span>Offline sync</span><span>Background services</span></div>
+            <a class="card-link" href="https://lystloc.com" target="_blank" rel="noreferrer">lystloc.com →</a>
+          </article>
+          <article class="feature reveal">
+            <p class="feature-meta">2018 – 2020 · Featured on YourStory</p>
+            <h3>DoggieTheApp</h3>
+            <p>Pet-care platform for food delivery, grooming bookings and medical records, with video calling and GPS tracking.</p>
+            <div class="chips"><span>Video calling</span><span>GPS</span><span>Bookings</span></div>
+          </article>
+        </div>
+
+        <div class="section-head reveal gallery-head">
+          <h2>More shipped apps</h2>
+          <p class="section-copy">Click any app to browse its screenshots.</p>
+        </div>
+        <div class="filters" role="group" aria-label="Project filters">
+          <button class="filter-btn is-active" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="iphone" type="button">iPhone</button>
+          <button class="filter-btn" data-filter="ipad" type="button">iPad</button>
+          <button class="filter-btn" data-filter="imac" type="button">Mac</button>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card" data-type="iphone ipad" tabindex="0" role="button" aria-label="View Lystloc screenshots">
+            <div class="preview-shell"><img class="preview" src="images/lystloc/1.PNG" alt="Lystloc preview" loading="lazy"></div>
+            <div class="project-body">
+              <div class="project-title"><img class="logo" src="images/lystloc/logo.png" alt="" loading="lazy"><h3>Lystloc</h3></div>
+              <p>Field-force platform with live GPS tracking, attendance forms and reimbursements.</p>
+              <span class="tag">Swift · VIPER</span>
             </div>
-            <div class="stat-card">
-              <h3>28+</h3>
-              <p>Apps on the App Store</p>
+          </article>
+          <article class="project-card" data-type="iphone ipad" tabindex="0" role="button" aria-label="View Doggie The App screenshots">
+            <div class="preview-shell"><img class="preview" src="images/doggie/1.PNG" alt="Doggie The App preview" loading="lazy"></div>
+            <div class="project-body">
+              <div class="project-title"><img class="logo" src="images/doggie/logo.png" alt="" loading="lazy"><h3>Doggie The App</h3></div>
+              <p>Pet-care platform with food delivery, grooming bookings, video calls and GPS. Featured on YourStory.</p>
+              <span class="tag">Swift · Video calling</span>
             </div>
-            <div class="stat-card">
-              <h3>5,000+</h3>
-              <p>Field users on location tracking</p>
+          </article>
+          <article class="project-card" data-type="iphone ipad" tabindex="0" role="button" aria-label="View Doggie Walker screenshots">
+            <div class="preview-shell"><img class="preview" src="images/doggiewalker/1.PNG" alt="Doggie Walker preview" loading="lazy"></div>
+            <div class="project-body">
+              <div class="project-title"><img class="logo" src="images/doggiewalker/logo.png" alt="" loading="lazy"><h3>Doggie Walker</h3></div>
+              <p>Companion app for dog walkers and pet owners.</p>
+              <span class="tag">Swift</span>
+            </div>
+          </article>
+          <article class="project-card" data-type="iphone ipad" tabindex="0" role="button" aria-label="View CallCozy screenshots">
+            <div class="preview-shell"><img class="preview" src="images/callcozy/1.png" alt="CallCozy preview" loading="lazy"></div>
+            <div class="project-body">
+              <div class="project-title"><img class="logo" src="images/callcozy/logo.png" alt="" loading="lazy"><h3>CallCozy</h3></div>
+              <p>Service booking and communication app for a freelance client.</p>
+              <span class="tag">Swift</span>
+            </div>
+          </article>
+          <article class="project-card" data-type="iphone ipad" tabindex="0" role="button" aria-label="View Morari Bapu screenshots">
+            <div class="preview-shell"><img class="preview" src="images/moraribapu/1.png" alt="Morari Bapu preview" loading="lazy"></div>
+            <div class="project-body">
+              <div class="project-title"><img class="logo" src="images/moraribapu/logo.png" alt="" loading="lazy"><h3>Morari Bapu</h3></div>
+              <p>Devotional content and engagement experience.</p>
+              <span class="tag">iOS</span>
+            </div>
+          </article>
+          <article class="project-card" data-type="iphone ipad" tabindex="0" role="button" aria-label="View Vetolution screenshots">
+            <div class="preview-shell"><img class="preview" src="images/vetolution/1.PNG" alt="Vetolution preview" loading="lazy"></div>
+            <div class="project-body">
+              <div class="project-title"><img class="logo" src="images/vetolution/logo.png" alt="" loading="lazy"><h3>Vetolution</h3></div>
+              <p>Veterinary app modules and workflows.</p>
+              <span class="tag">iOS</span>
+            </div>
+          </article>
+          <article class="project-card" data-type="iphone" tabindex="0" role="button" aria-label="View GIF Collage screenshots">
+            <div class="preview-shell"><img class="preview" src="images/gifcollage/1.png" alt="GIF Collage preview" loading="lazy"></div>
+            <div class="project-body">
+              <div class="project-title"><img class="logo" src="images/gifcollage/logo.png" alt="" loading="lazy"><h3>GIF Collage</h3></div>
+              <p>Create and share animated collage stories.</p>
+              <span class="tag">Image processing</span>
+            </div>
+          </article>
+          <article class="project-card" data-type="iphone" tabindex="0" role="button" aria-label="View Photo Collage screenshots">
+            <div class="preview-shell"><img class="preview" src="images/photocollage/1.png" alt="Photo Collage preview" loading="lazy"></div>
+            <div class="project-body">
+              <div class="project-title"><img class="logo" src="images/photocollage/logo.png" alt="" loading="lazy"><h3>Photo Collage</h3></div>
+              <p>Photo composition and social sharing.</p>
+              <span class="tag">Image processing</span>
+            </div>
+          </article>
+          <article class="project-card" data-type="iphone" tabindex="0" role="button" aria-label="View Hawala Today screenshots">
+            <div class="preview-shell"><img class="preview" src="images/hawalatoday/1.png" alt="Hawala Today preview" loading="lazy"></div>
+            <div class="project-body">
+              <div class="project-title"><img class="logo" src="images/hawalatoday/logo.png" alt="" loading="lazy"><h3>Hawala Today</h3></div>
+              <p>Ethereum wallet with transaction handling and security-focused integrations.</p>
+              <span class="tag">Ethereum</span>
+            </div>
+          </article>
+          <article class="project-card" data-type="iphone" tabindex="0" role="button" aria-label="View JustYap screenshots">
+            <div class="preview-shell"><img class="preview" src="images/justyap/1.png" alt="JustYap preview" loading="lazy"></div>
+            <div class="project-body">
+              <div class="project-title"><img class="logo" src="images/justyap/logo.png" alt="" loading="lazy"><h3>JustYap</h3></div>
+              <p>VoIP calling with CallKit, PushKit and Twilio.</p>
+              <span class="tag">CallKit · Twilio</span>
+            </div>
+          </article>
+          <article class="project-card" data-type="iphone" tabindex="0" role="button" aria-label="View Movir screenshots">
+            <div class="preview-shell"><img class="preview" src="images/movir/1.png" alt="Movir preview" loading="lazy"></div>
+            <div class="project-body">
+              <div class="project-title"><img class="logo" src="images/movir/logo.png" alt="" loading="lazy"><h3>Movir</h3></div>
+              <p>On-demand moving app with real-time driver tracking, quotes and in-app chat.</p>
+              <span class="tag">Google Maps SDK</span>
+            </div>
+          </article>
+          <article class="project-card" data-type="iphone" tabindex="0" role="button" aria-label="View OpenRoost screenshots">
+            <div class="preview-shell"><img class="preview" src="images/openroost/1.png" alt="OpenRoost preview" loading="lazy"></div>
+            <div class="project-body">
+              <div class="project-title"><img class="logo" src="images/openroost/logo.png" alt="" loading="lazy"><h3>OpenRoost</h3></div>
+              <p>Contractor and homeowner collaboration and project management.</p>
+              <span class="tag">Objective-C</span>
+            </div>
+          </article>
+          <article class="project-card" data-type="iphone" tabindex="0" role="button" aria-label="View Panic SOS Button screenshots">
+            <div class="preview-shell"><img class="preview" src="images/panicsos/1.png" alt="Panic SOS Button preview" loading="lazy"></div>
+            <div class="project-body">
+              <div class="project-title"><img class="logo" src="images/panicsos/logo.png" alt="" loading="lazy"><h3>Panic SOS Button</h3></div>
+              <p>Emergency alerts that notify trusted contacts instantly.</p>
+              <span class="tag">iOS</span>
+            </div>
+          </article>
+          <article class="project-card" data-type="iphone" tabindex="0" role="button" aria-label="View La Hielera screenshots">
+            <div class="preview-shell"><img class="preview" src="images/lahielera/1.png" alt="La Hielera preview" loading="lazy"></div>
+            <div class="project-body">
+              <div class="project-title"><img class="logo" src="images/lahielera/logo.png" alt="" loading="lazy"><h3>La Hielera</h3></div>
+              <p>On-demand delivery app for drinks, snacks and more.</p>
+              <span class="tag">Objective-C</span>
+            </div>
+          </article>
+          <article class="project-card" data-type="iphone" tabindex="0" role="button" aria-label="View Thoughty screenshots">
+            <div class="preview-shell"><img class="preview" src="images/thoughty/1.png" alt="Thoughty preview" loading="lazy"></div>
+            <div class="project-body">
+              <div class="project-title"><img class="logo" src="images/thoughty/logo.png" alt="" loading="lazy"><h3>Thoughty</h3></div>
+              <p>Real-time community app for local conversations.</p>
+              <span class="tag">Objective-C</span>
+            </div>
+          </article>
+          <article class="project-card" data-type="iphone" tabindex="0" role="button" aria-label="View DressPlus screenshots">
+            <div class="preview-shell"><img class="preview" src="images/dressplus/1.png" alt="DressPlus preview" loading="lazy"></div>
+            <div class="project-body">
+              <div class="project-title"><img class="logo" src="images/dressplus/logo.png" alt="" loading="lazy"><h3>DressPlus</h3></div>
+              <p>Fashion app with modern user flows.</p>
+              <span class="tag">iOS</span>
+            </div>
+          </article>
+          <article class="project-card" data-type="imac" tabindex="0" role="button" aria-label="View Hawala Wallet (iMac) screenshots">
+            <div class="preview-shell preview-shell-desktop"><img class="preview" src="images/hawalatoday/imac_1.png" alt="Hawala Wallet (iMac) preview" loading="lazy"></div>
+            <div class="project-body">
+              <div class="project-title"><img class="logo" src="images/hawalatoday/mac_logo.png" alt="" loading="lazy"><h3>Hawala Wallet (iMac)</h3></div>
+              <p>Desktop companion for the Hawala wallet.</p>
+              <span class="tag">macOS</span>
+            </div>
+          </article>
+          <article class="project-card" data-type="iphone ipad" tabindex="0" role="button" aria-label="View Focus MRS screenshots">
+            <div class="preview-shell"><img class="preview" src="images/focus_mrs/1.png" alt="Focus MRS preview" loading="lazy"></div>
+            <div class="project-body">
+              <div class="project-title"><img class="logo" src="images/focus_mrs/logo.png" alt="" loading="lazy"><h3>Focus MRS</h3></div>
+              <p>Productivity and workflow app.</p>
+              <span class="tag">iOS</span>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="skills">
-      <div class="container reveal">
-        <div class="section-head">
-          <p class="eyebrow">Core Skills</p>
-          <h2>Technical stack and engineering strengths</h2>
+    <section class="section alt" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>Tools I use to deliver</h2>
         </div>
-        <div class="skills-panel">
-          <div class="skill-row"><span>Swift</span><span>95%</span><div class="meter"><i style="width:95%"></i></div></div>
-          <div class="skill-row"><span>Objective-C</span><span>90%</span><div class="meter"><i style="width:90%"></i></div></div>
-          <div class="skill-row"><span>SwiftUI</span><span>93%</span><div class="meter"><i style="width:93%"></i></div></div>
-          <div class="skill-row"><span>UIKit</span><span>92%</span><div class="meter"><i style="width:92%"></i></div></div>
-          <div class="skill-row"><span>Flutter (Dart)</span><span>88%</span><div class="meter"><i style="width:88%"></i></div></div>
-          <div class="skill-row"><span>React Native</span><span>85%</span><div class="meter"><i style="width:85%"></i></div></div>
-          <div class="skill-row"><span>Kotlin</span><span>70%</span><div class="meter"><i style="width:70%"></i></div></div>
-          <div class="skill-row"><span>TypeScript / JavaScript</span><span>75%</span><div class="meter"><i style="width:75%"></i></div></div>
-          <div class="skill-row"><span>MVVM / VIPER / Clean Architecture</span><span>92%</span><div class="meter"><i style="width:92%"></i></div></div>
-          <div class="skill-row"><span>REST, WebSockets, GraphQL, OAuth 2.0</span><span>90%</span><div class="meter"><i style="width:90%"></i></div></div>
-          <div class="skill-row"><span>CI/CD, Fastlane, TestFlight</span><span>88%</span><div class="meter"><i style="width:88%"></i></div></div>
-          <div class="skill-row"><span>AI-Assisted Development</span><span>90%</span><div class="meter"><i style="width:90%"></i></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="ai-edge">
-      <div class="container reveal">
-        <div class="section-head">
-          <p class="eyebrow">AI Edge</p>
-          <h2>What makes this profile relevant for modern mobile and AI roles</h2>
-          <p class="section-copy">Beyond shipping mobile products, I use AI tools daily to speed up development, and I lead teams in doing the same.</p>
-        </div>
-        <div class="ai-grid">
-          <article class="ai-card">
-            <h3>AI-Assisted Development</h3>
-            <p>Daily use of Cursor, Claude, GitHub Copilot, and ChatGPT with prompt engineering to improve development workflows and delivery speed.</p>
-          </article>
-          <article class="ai-card">
-            <h3>Leadership</h3>
-            <p>Technical architecture, code reviews, mentoring, requirements analysis, client communication, and Agile/Scrum across multiple concurrent products.</p>
-          </article>
-          <article class="ai-card">
-            <h3>Engineering Maturity</h3>
-            <p>12+ years shipping mobile products. Reduced crash rate by 30% and API latency by 25% at Chien Technologies, and shipped streaming for 1,000+ concurrent users.</p>
-          </article>
+        <div class="skills-grid">
+          <div class="skill-group reveal"><h3>Languages</h3><div class="chips"><span>Swift</span><span>Objective-C</span><span>Dart</span><span>Kotlin</span><span>JavaScript</span><span>TypeScript</span></div></div>
+          <div class="skill-group reveal"><h3>Mobile</h3><div class="chips"><span>SwiftUI</span><span>UIKit</span><span>Combine</span><span>Core Data</span><span>Core Location</span><span>AVFoundation</span><span>CallKit</span><span>PushKit</span><span>React Native</span><span>Flutter</span></div></div>
+          <div class="skill-group reveal"><h3>Architecture</h3><div class="chips"><span>MVVM</span><span>MVC</span><span>VIPER</span><span>Clean Architecture</span><span>Modular Architecture</span><span>SOLID</span><span>Dependency Injection</span></div></div>
+          <div class="skill-group reveal"><h3>APIs & Integrations</h3><div class="chips"><span>REST</span><span>JSON</span><span>WebSockets</span><span>GraphQL</span><span>OAuth 2.0</span><span>Google Maps SDK</span><span>Twilio</span><span>Firebase</span></div></div>
+          <div class="skill-group reveal"><h3>Tools & Delivery</h3><div class="chips"><span>Xcode</span><span>Android Studio</span><span>Git</span><span>GitHub</span><span>GitLab</span><span>CI/CD</span><span>Fastlane</span><span>TestFlight</span></div></div>
+          <div class="skill-group reveal"><h3>AI-Assisted Dev</h3><div class="chips"><span>Cursor</span><span>Claude</span><span>GitHub Copilot</span><span>ChatGPT</span><span>Prompt Engineering</span></div></div>
+          <div class="skill-group reveal"><h3>Leadership</h3><div class="chips"><span>Technical Architecture</span><span>Code Reviews</span><span>Mentoring</span><span>Requirements Analysis</span><span>Client Communication</span><span>Agile/Scrum</span></div></div>
         </div>
       </div>
     </section>
 
     <section class="section" id="experience">
-      <div class="container reveal">
-        <div class="section-head">
-          <p class="eyebrow">Journey</p>
-          <h2>Experience and education timeline</h2>
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Experience</p>
+          <h2>Career timeline</h2>
         </div>
-        <div class="timeline-grid">
-          <article class="timeline-card">
-            <h3>Experience</h3>
-            <div class="timeline-item">
-              <p class="timeline-year">05/2025 - Present</p>
-              <h4>Lead Application Developer · Junkies Coder</h4>
-              <ul class="timeline-points">
-                <li>Drive mobile development across four products, coordinating feature delivery, technical decisions, and release readiness.</li>
-                <li>Built iQuQ, a native iOS music and party collaboration app using SwiftUI, MVVM, Spotify and Apple Music integrations, and Swift concurrency.</li>
-                <li>Delivered cross-platform features for Etmad (Flutter) and Limba (React Native) across iOS and Android.</li>
-                <li>Migrated Prime Chatting from a web-based product to mobile applications.</li>
-                <li>Review code, mentor developers, troubleshoot complex issues, and use AI-assisted tools to improve workflows.</li>
-              </ul>
-            </div>
-            <div class="timeline-item">
-              <p class="timeline-year">11/2020 - 04/2025</p>
-              <h4>Senior iOS Developer · Mindsbeam Technologies Pvt. Ltd. (Lystloc)</h4>
-              <ul class="timeline-points">
-                <li>Developed and maintained the Lystloc iOS app, contributing to architecture, implementation, testing, and App Store releases.</li>
-                <li>Built field-force management features including real-time GPS tracking, background location services, dynamic attendance forms, and reimbursement workflows.</li>
-                <li>Improved reliability through battery optimization, offline data synchronization, API integration, and performance tuning.</li>
-                <li>Collaborated with product, backend, and QA teams to turn business requirements into scalable mobile solutions.</li>
-              </ul>
-            </div>
-            <div class="timeline-item">
-              <p class="timeline-year">02/2020 - 10/2020</p>
-              <h4>Freelance iOS Engineer · Self-Employed</h4>
-              <ul class="timeline-points">
-                <li>Delivered iOS apps with AR/VR experiences, live streaming, and real-time analytics for education and event use cases.</li>
-                <li>Implemented media-processing and streaming functionality using Swift and AVFoundation.</li>
-              </ul>
-            </div>
-            <div class="timeline-item">
-              <p class="timeline-year">07/2018 - 01/2020</p>
-              <h4>Lead iOS Developer · Chien Technologies Pvt Ltd</h4>
-              <ul class="timeline-points">
-                <li>Led iOS development for a pet-care platform with GPS tracking, video calling, service bookings, and pet information management.</li>
-                <li>Coordinated feature development, code reviews, debugging, and releases while keeping code quality and modular architecture.</li>
-                <li>Improved stability and responsiveness through performance optimization and protocol-oriented refactoring.</li>
-              </ul>
-            </div>
-            <div class="timeline-item">
-              <p class="timeline-year">02/2016 - 06/2018</p>
-              <h4>Senior iOS Developer · WhiteOrange Technologies Limited</h4>
-              <ul class="timeline-points">
-                <li>Progressed into team leadership, mentoring three developers and supporting technical decisions, code quality, and feature delivery.</li>
-                <li>Developed apps spanning photo editing, location tracking, VoIP communication, and cryptocurrency wallets.</li>
-                <li>Implemented image processing, real-time location services, VoIP using CallKit, PushKit, and Twilio, and Ethereum wallet functionality.</li>
-              </ul>
-            </div>
-            <div class="timeline-item">
-              <p class="timeline-year">07/2015 - 01/2016</p>
-              <h4>iOS Developer · Creadigol Solution</h4>
-              <ul class="timeline-points">
-                <li>Developed iOS apps across healthcare, music streaming, and cloud storage using Objective-C, UIKit, Core Data, and REST APIs.</li>
-                <li>Implemented features, data management, access controls, debugging, and UI improvements.</li>
-              </ul>
-            </div>
-            <div class="timeline-item">
-              <p class="timeline-year">06/2014 - 06/2015</p>
-              <h4>iOS Developer · WeeTech Solution Pvt Ltd</h4>
-              <ul class="timeline-points">
-                <li>Built and maintained iOS apps using Objective-C, UIKit, MVC, and REST API integrations.</li>
-                <li>Contributed to UI development, feature implementation, testing, debugging, and App Store delivery across multiple projects.</li>
-              </ul>
-            </div>
+        <div class="timeline">
+          <article class="tl-item reveal">
+            <div class="tl-date">05/2025 – Present</div>
+            <div class="tl-card"><h3>Lead Application Developer</h3><p class="tl-co">Junkies Coder</p><ul><li>Lead mobile development across four products, owning feature delivery, technical decisions and release readiness.</li><li>Built iQuQ, a native iOS music and party collaboration app (SwiftUI, MVVM, Spotify and Apple Music, Swift concurrency).</li><li>Delivered cross-platform features for Etmad (Flutter) and Limba (React Native); migrated Prime Chatting from web to mobile.</li><li>Review code, mentor developers and use AI-assisted tools to speed up delivery.</li></ul></div>
           </article>
-          <article class="timeline-card">
-            <h3>Education</h3>
-            <div class="timeline-item">
-              <p class="timeline-year">2011 - 2014</p>
-              <h4>MCA</h4>
-              <p>Shree Devi Institute of Technology (VTU)</p>
-            </div>
-            <div class="timeline-item">
-              <p class="timeline-year">2008 - 2011</p>
-              <h4>BCA</h4>
-              <p>Shri Manilal Kadakia College of Management and Computer Studies (VNSGU)</p>
-            </div>
-            <div class="timeline-item">
-              <p class="timeline-year">2007 - 2008</p>
-              <h4>Higher Secondary</h4>
-              <p>T. M. Shah Adarsh High School (GSEB)</p>
-            </div>
+          <article class="tl-item reveal">
+            <div class="tl-date">11/2020 – 04/2025</div>
+            <div class="tl-card"><h3>Senior iOS Developer</h3><p class="tl-co">Mindsbeam Technologies Pvt. Ltd. (Lystloc)</p><ul><li>Built real-time GPS tracking, background location, dynamic attendance forms and reimbursement workflows.</li><li>Improved reliability with battery optimization, offline sync, API integration and performance tuning.</li><li>Worked with product, backend and QA to turn requirements into scalable mobile solutions.</li></ul></div>
           </article>
+          <article class="tl-item reveal">
+            <div class="tl-date">02/2020 – 10/2020</div>
+            <div class="tl-card"><h3>Freelance iOS Engineer</h3><p class="tl-co">Self-employed</p><ul><li>Delivered iOS apps with AR/VR, live streaming and real-time analytics for education and events.</li><li>Built media-processing and streaming features with Swift and AVFoundation.</li></ul></div>
+          </article>
+          <article class="tl-item reveal">
+            <div class="tl-date">07/2018 – 01/2020</div>
+            <div class="tl-card"><h3>Lead iOS Developer</h3><p class="tl-co">Chien Technologies Pvt Ltd</p><ul><li>Led iOS development of a pet-care platform with GPS tracking, video calling and bookings.</li><li>Reduced crash rate by 30% and API latency by 25% through optimization and protocol-oriented refactoring.</li></ul></div>
+          </article>
+          <article class="tl-item reveal">
+            <div class="tl-date">02/2016 – 06/2018</div>
+            <div class="tl-card"><h3>Senior iOS Developer</h3><p class="tl-co">WhiteOrange Technologies Limited</p><ul><li>Became team lead, mentoring three developers.</li><li>Built photo editing, location tracking, VoIP (CallKit, PushKit, Twilio) and Ethereum wallet apps.</li></ul></div>
+          </article>
+          <article class="tl-item reveal">
+            <div class="tl-date">07/2015 – 01/2016</div>
+            <div class="tl-card"><h3>iOS Developer</h3><p class="tl-co">Creadigol Solution</p><ul><li>Built healthcare, music streaming and cloud storage apps with Objective-C, UIKit, Core Data and REST.</li></ul></div>
+          </article>
+          <article class="tl-item reveal">
+            <div class="tl-date">06/2014 – 06/2015</div>
+            <div class="tl-card"><h3>iOS Developer</h3><p class="tl-co">WeeTech Solution Pvt Ltd</p><ul><li>Built and shipped iOS apps with Objective-C, UIKit, MVC and REST integrations across multiple projects.</li></ul></div>
+          </article>
+        </div>
+        <div class="edu reveal">
+          <h3>Education</h3>
+          <div class="cards-3">
+            <div class="card"><strong>MCA</strong><p>Shree Devi Institute of Technology (VTU) · 2011 – 2014</p></div>
+            <div class="card"><strong>BCA</strong><p>Shri Manilal Kadakia College of Management and Computer Studies (VNSGU) · 2008 – 2011</p></div>
+            <div class="card"><strong>Promoted to Team Lead in one year</strong><p>Led three iOS developers at WhiteOrange Technologies.</p></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="projects">
-      <div class="container reveal">
-        <div class="section-head section-head-projects">
-          <p class="eyebrow">Portfolio</p>
-          <h2>Selected products and shipped apps</h2>
-          <p class="section-copy">A curated snapshot of shipped mobile products across location tracking, pet care, finance, communication, and productivity.</p>
-        </div>
-
-        <div class="filters" role="tablist" aria-label="Project filters">
-          <button class="filter-btn is-active" data-filter="all" type="button">All</button>
-          <button class="filter-btn" data-filter="iphone" type="button">iPhone</button>
-          <button class="filter-btn" data-filter="ipad" type="button">iPad</button>
-          <button class="filter-btn" data-filter="imac" type="button">iMac</button>
-        </div>
-
-        <div class="portfolio-note">
-          <strong>Profile angle:</strong> Lead Application Developer with 28+ apps published on the App Store and hands-on experience across native iOS, Flutter, React Native, and AI-assisted development.
-        </div>
-
-        <div class="projects-grid">
-          <article class="project-card" data-type="iphone ipad">
-            <img class="logo" src="images/lystloc/logo.png" alt="Lystloc logo">
-            <h3>Lystloc</h3>
-            <p>Location intelligence and workforce tracking platform.</p>
-            <div class="preview-shell">
-              <img class="preview" src="images/lystloc/1.PNG" alt="Lystloc app preview">
-            </div>
-          </article>
-          <article class="project-card" data-type="iphone ipad">
-            <img class="logo" src="images/doggie/logo.png" alt="Doggie The App logo">
-            <h3>Doggie The App</h3>
-            <p>Pet-focused service and communication ecosystem.</p>
-            <div class="preview-shell">
-              <img class="preview" src="images/doggie/1.PNG" alt="Doggie app preview">
-            </div>
-          </article>
-          <article class="project-card" data-type="iphone ipad">
-            <img class="logo" src="images/doggiewalker/logo.png" alt="Doggie Walker logo">
-            <h3>Doggie Walker</h3>
-            <p>Companion app for walker and pet-owner workflows.</p>
-            <div class="preview-shell">
-              <img class="preview" src="images/doggiewalker/1.PNG" alt="Doggie Walker preview">
-            </div>
-          </article>
-          <article class="project-card" data-type="iphone ipad">
-            <img class="logo" src="images/callcozy/logo.png" alt="CallCozy logo">
-            <h3>CallCozy</h3>
-            <p>Service booking and communication utility app.</p>
-            <div class="preview-shell">
-              <img class="preview" src="images/callcozy/1.png" alt="CallCozy preview">
-            </div>
-          </article>
-          <article class="project-card" data-type="iphone ipad">
-            <img class="logo" src="images/moraribapu/logo.png" alt="Morari Bapu logo">
-            <h3>Morari Bapu</h3>
-            <p>Devotional content and engagement experience.</p>
-            <div class="preview-shell">
-              <img class="preview" src="images/moraribapu/1.png" alt="Morari Bapu preview">
-            </div>
-          </article>
-          <article class="project-card" data-type="iphone ipad">
-            <img class="logo" src="images/vetolution/logo.png" alt="Vetolution logo">
-            <h3>Vetolution</h3>
-            <p>Veterinary-facing app modules and workflows.</p>
-            <div class="preview-shell">
-              <img class="preview" src="images/vetolution/1.PNG" alt="Vetolution preview">
-            </div>
-          </article>
-          <article class="project-card" data-type="iphone">
-            <img class="logo" src="images/gifcollage/logo.png" alt="GIF collage logo">
-            <h3>GIF Collage</h3>
-            <p>Create and share animated collage stories.</p>
-            <div class="preview-shell">
-              <img class="preview" src="images/gifcollage/1.png" alt="GIF collage preview">
-            </div>
-          </article>
-          <article class="project-card" data-type="iphone">
-            <img class="logo" src="images/photocollage/logo.png" alt="Photo collage logo">
-            <h3>Photo Collage</h3>
-            <p>Photo composition and social sharing app.</p>
-            <div class="preview-shell">
-              <img class="preview" src="images/photocollage/1.png" alt="Photo Collage preview">
-            </div>
-          </article>
-          <article class="project-card" data-type="iphone">
-            <img class="logo" src="images/hawalatoday/logo.png" alt="Hawala Today logo">
-            <h3>Hawala Today</h3>
-            <p>Finance-focused utility app with fast actions.</p>
-            <div class="preview-shell">
-              <img class="preview" src="images/hawalatoday/1.png" alt="Hawala Today preview">
-            </div>
-          </article>
-          <article class="project-card" data-type="iphone">
-            <img class="logo" src="images/justyap/logo.png" alt="JustYap logo">
-            <h3>JustYap</h3>
-            <p>Social interaction platform for instant conversations.</p>
-            <div class="preview-shell">
-              <img class="preview" src="images/justyap/1.png" alt="JustYap preview">
-            </div>
-          </article>
-          <article class="project-card" data-type="iphone">
-            <img class="logo" src="images/movir/logo.png" alt="Movir logo">
-            <h3>Movir</h3>
-            <p>Video-centered mobile interaction concept.</p>
-            <div class="preview-shell">
-              <img class="preview" src="images/movir/1.png" alt="Movir preview">
-            </div>
-          </article>
-          <article class="project-card" data-type="iphone">
-            <img class="logo" src="images/openroost/logo.png" alt="OpenRoost logo">
-            <h3>OpenRoost</h3>
-            <p>Contractor and homeowner collaboration workflows.</p>
-            <div class="preview-shell">
-              <img class="preview" src="images/openroost/1.png" alt="OpenRoost preview">
-            </div>
-          </article>
-          <article class="project-card" data-type="iphone">
-            <img class="logo" src="images/panicsos/logo.png" alt="Panic SOS logo">
-            <h3>Panic SOS Button</h3>
-            <p>Emergency communication and safety triggers.</p>
-            <div class="preview-shell">
-              <img class="preview" src="images/panicsos/1.png" alt="Panic SOS preview">
-            </div>
-          </article>
-          <article class="project-card" data-type="iphone">
-            <img class="logo" src="images/lahielera/logo.png" alt="La Hielera logo">
-            <h3>La Hielera</h3>
-            <p>On-demand delivery service app experience.</p>
-            <div class="preview-shell">
-              <img class="preview" src="images/lahielera/1.png" alt="La Hielera preview">
-            </div>
-          </article>
-          <article class="project-card" data-type="iphone">
-            <img class="logo" src="images/thoughty/logo.png" alt="Thoughty logo">
-            <h3>Thoughty</h3>
-            <p>Community-led conversations and discovery platform.</p>
-            <div class="preview-shell">
-              <img class="preview" src="images/thoughty/1.png" alt="Thoughty preview">
-            </div>
-          </article>
-          <article class="project-card" data-type="iphone">
-            <img class="logo" src="images/dressplus/logo.png" alt="DressPlus logo">
-            <h3>DressPlus</h3>
-            <p>Fashion utility app with modern user flows.</p>
-            <div class="preview-shell">
-              <img class="preview" src="images/dressplus/1.png" alt="DressPlus preview">
-            </div>
-          </article>
-          <article class="project-card" data-type="imac">
-            <img class="logo" src="images/hawalatoday/mac_logo.png" alt="Hawala Wallet logo">
-            <h3>Hawala Wallet (iMac)</h3>
-            <p>Desktop finance suite for extended controls.</p>
-            <div class="preview-shell preview-shell-desktop">
-              <img class="preview desktop-preview" src="images/hawalatoday/imac_1.png" alt="Hawala Wallet iMac preview">
-            </div>
-          </article>
-          <article class="project-card" data-type="iphone ipad">
-            <img class="logo" src="images/focus_mrs/logo.png" alt="Focus MRS logo">
-            <h3>Focus MRS</h3>
-            <p>iOS productivity and workflow enhancement app.</p>
-            <div class="preview-shell">
-              <img class="preview" src="images/focus_mrs/1.png" alt="Focus MRS preview">
-            </div>
-          </article>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="section" id="testimonials">
-      <div class="container reveal">
-        <div class="section-head">
-          <p class="eyebrow">Feedback</p>
+    <section class="section alt" id="reviews">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Testimonials</p>
           <h2>What clients say</h2>
         </div>
-        <div class="reviews-grid">
-          <article class="review-card">
-            <h3>Thomas T</h3>
-            <p>"If this freelancer keeps performing perfect work, I may never need another developer again."</p>
-          </article>
-          <article class="review-card">
-            <h3>Nikhil S</h3>
-            <p>"Working with Bhavin and his team was a great experience. Highly recommended."</p>
-          </article>
-          <article class="review-card">
-            <h3>Daniil Z.</h3>
-            <p>"Very fast response and handled things quickly with quality."</p>
-          </article>
+        <div class="cards-3">
+          <figure class="card quote reveal"><blockquote>“If this freelancer keeps performing perfect work, I may never need another developer again.”</blockquote><figcaption>Thomas T</figcaption></figure>
+          <figure class="card quote reveal"><blockquote>“Working with Bhavin and his team was a great experience. Highly recommended.”</blockquote><figcaption>Nikhil S</figcaption></figure>
+          <figure class="card quote reveal"><blockquote>“Very fast response and handled things quickly with quality.”</blockquote><figcaption>Daniil Z.</figcaption></figure>
         </div>
       </div>
     </section>
 
     <section class="section" id="contact">
-      <div class="container reveal">
-        <div class="section-head">
-          <p class="eyebrow">Contact</p>
-          <h2>Let’s build your next mobile app</h2>
-        </div>
-        <div class="contact-grid">
-          <article class="panel">
-            <h3>Let's talk about your project</h3>
-            <p>
-              Send details about your app on my email at
-              <a href="mailto:bhavinchauhan.tech@gmail.com">bhavinchauhan.tech@gmail.com</a>.
-            </p>
-            <p>I typically respond within one business day.</p>
-          </article>
-
+      <div class="container">
+        <div class="cta reveal">
+          <div class="cta-copy">
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s build your next app</h2>
+            <p>Tell me what you need. I usually reply within one business day.</p>
+            <ul class="contact-list">
+              <li><span>Email</span><a href="mailto:bhavinchauhan.tech@gmail.com">bhavinchauhan.tech@gmail.com</a></li>
+              <li><span>Phone / WhatsApp</span><a href="https://api.whatsapp.com/send?phone=919157716336" target="_blank" rel="noreferrer">+91 91577 16336</a></li>
+              <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/bhavin-chauhan-73008026/" target="_blank" rel="noreferrer">bhavin-chauhan</a></li>
+            </ul>
+          </div>
           <form id="contact-form" class="contact-form" method="post" action="mailto:bhavinchauhan.tech@gmail.com" novalidate>
-            <label>
-              Name
-              <input type="text" name="InputName" required>
-            </label>
-            <label>
-              Email
-              <input type="email" name="InputEmail" required>
-            </label>
-            <label>
-              Subject
-              <input type="text" name="InputSubject" required>
-            </label>
-            <label>
-              Message
-              <textarea name="InputMessage" rows="5" required></textarea>
-            </label>
+            <label>Name<input type="text" name="InputName" autocomplete="name" required></label>
+            <label>Email<input type="email" name="InputEmail" autocomplete="email" required></label>
+            <label>Subject<input type="text" name="InputSubject" required></label>
+            <label>Message<textarea name="InputMessage" rows="4" required></textarea></label>
             <div class="form-message" aria-live="polite"></div>
             <button class="btn btn-primary" type="submit">Send message</button>
           </form>
@@ -480,7 +396,10 @@
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="currentYear"></span> Bhavin Chauhan. Crafted for modern web performance.</p>
+    <div class="container footer-wrap">
+      <p>© <span id="currentYear"></span> Bhavin Chauhan · Lead Application Developer</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
   </footer>
 
   <div class="project-modal" id="projectModal" hidden>
